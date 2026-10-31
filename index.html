@@ -1,9 +1,209 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>CI/CD Demo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Hub | Jenkins Deployment</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #0f172a;
+            color: #f8fafc;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #334155;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        .tagline {
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 9px 18px;
+            background: #064e3b;
+            color: #6ee7b7;
+            border-radius: 30px;
+            font-size: 13px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        h1 span {
+            color: #38bdf8;
+        }
+
+        .description {
+            color: #94a3b8;
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 16px;
+            border: 1px solid #334155;
+            margin-bottom: 30px;
+        }
+
+        .card h2 {
+            margin-bottom: 15px;
+            color: #38bdf8;
+        }
+
+        .card p {
+            color: #cbd5e1;
+            line-height: 1.7;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .feature {
+            background: #1e293b;
+            padding: 22px 12px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+        }
+
+        .feature h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+            font-size: 17px;
+        }
+
+        .feature p {
+            color: #94a3b8;
+            font-size: 13px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #64748b;
+            border-top: 1px solid #334155;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 34px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hello from CI/CD</h1>
-    <h2>Git + Jenkins + Docker</h2>
+
+    <header>
+        <div class="logo">DevOps Hub</div>
+        <div class="tagline">Automate. Deploy. Scale.</div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="badge">● Application Successfully Deployed</div>
+
+            <h1>
+                Welcome to <span>DevOps Hub</span>
+            </h1>
+
+            <p class="description">
+                Building, automating and deploying applications
+                using modern DevOps technologies.
+            </p>
+
+            <div class="card">
+                <h2>Jenkins CI/CD Pipeline</h2>
+                <p>
+                    This application is deployed through Jenkins.
+                    Every successful build brings us one step closer
+                    to continuous integration and continuous delivery.
+                </p>
+            </div>
+
+            <div class="features">
+
+                <div class="feature">
+                    <h3>CI/CD</h3>
+                    <p>Automated build and deployment workflows.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Cloud</h3>
+                    <p>Infrastructure powered by AWS.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Automation</h3>
+                    <p>Streamlined software delivery processes.</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        © 2026 DevOps Hub | Powered by Jenkins & AWS
+    </footer>
+
 </body>
 </html>
+
